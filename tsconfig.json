@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "module": "commonjs",
+    "target": "ES2017",
     "useDefineForClassFields": true,
-    "module": "ESNext",
-    "lib": ["ESNext", "DOM"],
     "moduleResolution": "Node",
     "strict": true,
     "resolveJsonModule": true,
@@ -13,7 +12,12 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "paths": {
+      "*": ["./src/*"],
+    }
   },
-  "include": ["src"]
+  "exclude": ["node_modules", "src/**/*.spec.*"],
+  "include": ["src/**/*"]
 }
