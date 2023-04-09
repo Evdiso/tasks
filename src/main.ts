@@ -1,4 +1,4 @@
-import { createBitAccessor, createBitGetter } from "tasks/task1";
+import { createBitAccessor, createBitGetter } from "./tasks/task1";
 
 const bitGetter = createBitGetter(new Uint8Array([0b1110, 0b1101]));
 const bitAccessor = createBitAccessor(new Uint8Array([0b1110, 0b1101]));
