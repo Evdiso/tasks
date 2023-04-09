@@ -14,9 +14,6 @@
     "noImplicitReturns": true,
     "skipLibCheck": true,
     "noImplicitAny": true,
-    "paths": {
-      "*": ["./src/*"],
-    }
   },
   "exclude": ["node_modules", "src/**/*.spec.*"],
   "include": ["src/**/*"]
