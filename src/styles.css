@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+#img {
+    height: 500px;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#canvas {
+    border: 1px solid;
+}
+
+.controls {
+    margin: 0 auto;
+    width: 500px;
+    padding-top: 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}

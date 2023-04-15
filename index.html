@@ -6,7 +6,23 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <div id="app">
+      <img id="img" src="" alt="">
+      <canvas id="canvas" width="500" height="500"></canvas>
+    </div>
+    <div class="controls">
+      <label>
+        <input type="range" id="red" name="volume" min="0" max="255">
+        Red
+      </label>
+      <label>
+        <input type="range" id="green" name="volume" min="0" max="255">
+        Green
+      </label>
+      <label>
+        <input type="range" id="blue" name="volume" min="0" max="255">
+        Blue
+      </label>
+    </div>
   </body>
 </html>
