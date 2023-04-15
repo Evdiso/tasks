@@ -72,24 +72,5 @@ export const filter = ({ canvas, red, green, blue }: IFilterProps) => {
         return _canvas;
       }
     },
-
-    grayscale: async (data: string | HTMLCanvasElement): Promise<HTMLCanvasElement> => {
-      redColor = 155;
-      greenColor = 155;
-      blueColor = 155;
-
-      if (typeof data === 'string') {
-        if (!_canvas) {
-          throw new Error('canvas element does not exist');
-        }
-        const img = await asyncImageLoader(data);
-        changeCanvas(img);
-        return _canvas;
-      } else {
-        _canvas = data;
-        changeCanvas();
-        return _canvas;
-      }
-    },
   };
 };
